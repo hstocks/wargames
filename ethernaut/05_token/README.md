@@ -8,7 +8,7 @@ The issue here is an integer overflow. When checking whether the user has suffic
   }
 ```
 
-The calculation can underflow which will pass the check. This means if we try to transfer more money than we have available then we will succeed. Interestingly we have to set the _to to a *different* address to `msg.sender`, otherwise we underflow and then overflow, and arrive at our original value. For this I just used the address of the contract (`instance`)
+The calculation can underflow which will pass the check. This means if we try to transfer more money than we have available then we will succeed. Importantly we have to set the \_to parameter to a *different* address from `msg.sender`, otherwise we underflow and then overflow, and arrive back at our original value. For this I just used the address of the contract (`instance`)
 
 ```javascript
 await sendTransaction({
