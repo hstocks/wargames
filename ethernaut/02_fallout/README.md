@@ -1,6 +1,6 @@
 The "constructor" is sneakily named `Fal1out` (note the 1, instead of l), which is different to the contract name. This means that it is just a normal function that we can call which happens to grant the sender ownership.
 
-```
+```javascript
 await contract.Fal1out()
 ```
 

@@ -1,7 +1,7 @@
 
 In the changeOwner() function the target is checking whether `tx.origin != msg.sender`. We can make this true if we deploy our own smart contract (which will be `msg.sender`), and then we call our smart contract from our MetaMask wallet with JavaScript, which becomes `tx.origin`. We will pass the address of our own wallet so we become the owner.
 
-We write out own smart contract:
+We write our own smart contract:
 ```solidity
 pragma solidity ^0.4.18;
 
