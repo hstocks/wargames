@@ -1,4 +1,4 @@
-This contract doesn't contain a payable fallback function, which means that it is not possible to transfer Ethereum to it via convential means.
+This contract doesn't contain a payable fallback function, which means that it is not possible to transfer Ether to it via convential means.
 
 Reading the [Solidity documentation](https://solidity.readthedocs.io/en/v0.7.1/contracts.html#receive-ether-function) on contracts receiving Ether we can see the following section:
 
